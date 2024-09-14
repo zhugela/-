@@ -42,6 +42,7 @@ public class UserLogin extends JFrame {
         //登录按钮
         ButtonLogin.setBounds(125,180,150,30);
         this.getContentPane().add(ButtonLogin);
+        //zhuc
         this.setVisible(true);
     }
 }
