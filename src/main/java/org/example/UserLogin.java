@@ -44,6 +44,7 @@ public class UserLogin extends JFrame implements ActionListener {
         //登录按钮
         ButtonLogin.setBounds(125, 180, 150, 30);
         this.getContentPane().add(ButtonLogin);
+        ButtonLogin.addActionListener(this);
         //zhuc
         this.setVisible(true);
     }
@@ -55,7 +56,7 @@ public class UserLogin extends JFrame implements ActionListener {
             String password = new String(fieldPassword.getPassword());
             User user = verifyaccount(account,password);{
                 if(user!=null){
-                    new TIcketBooker();
+                    new TIcketBooker(user);
                     this.dispose();
                 }
                 else{

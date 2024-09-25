@@ -34,6 +34,6 @@ public class TIcketBooker extends JFrame {
      private JButton buttonSearch = new JButton("查询");
      private JButton buttonBook = new JButton("预订");
      private JTable result
-             //dddsc
+             //ddds
 
 }
